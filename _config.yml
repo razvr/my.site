@@ -1,0 +1,17 @@
+# Localhost Jekyll Server Settings
+host: '0.0.0.0'
+port: '4000'
+
+# Basic Blog Details
+title: 'Razur site'
+description: 'made with Jekyll'
+permalink: '/:year/:month/:title/'
+
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    load_paths:
+        - _sass
+        - node_modules
+exclude: []
