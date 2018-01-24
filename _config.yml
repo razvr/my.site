@@ -1,6 +1,7 @@
 # Localhost Jekyll Server Settings
 host: '0.0.0.0'
 port: '4000'
+root: /my.site
 
 # Basic Blog Details
 title: 'Razur site'
@@ -11,7 +12,5 @@ markdown: kramdown
 highlighter: rouge
 
 sass:
-    load_paths:
-        - _sass
-        - node_modules
-exclude: []
+  sass_dir: _scss
+  style: :compressed

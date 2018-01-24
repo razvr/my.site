@@ -1,0 +1,117 @@
+---
+---
+@import "variables";
+// @import "~bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #111;
+  font-family: arial;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 8px 14px 8px;
+  color: #fff;
+}
+
+.envelope {
+  -webkit-clip-path: polygon(50% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
+  clip-path: polygon(50% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
+  background: url("http://via.placeholder.com/1280x750/") no-repeat center;
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+  padding: 175px 0 0;
+  margin: 0;
+  h1 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 7.8em;
+    color: #333;
+    text-align: center;
+    margin: 0 auto;
+  }
+  li {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    padding: 0 20px 0;
+    text-transform: uppercase;
+    font-size: .76em;
+    font-family: arial;
+    color: #272727;
+    position: relative;
+    top: -15px;
+  }
+}
+
+.cta {
+  -webkit-clip-path: polygon(40% 0, 50% 120%, 60% 0);
+  clip-path: polygon(40% 0, 50% 100%, 60% 0);
+  height: 36px;
+  background-color: #272727;
+  margin-top: 160px; // find way to sticky to bottom of cta
+  transform: translateY(0px);
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  &:hover {
+    background-color: #999;
+  }
+}
+
+/* this sets the position of the arrow when it's up, so it will move up or down by 14px when you add or remove this class */
+
+.lift {
+  transform: translateY(10px);
+}
+
+.parallelogram {
+  -webkit-clip-path: polygon(0 0, 100% 24%, 100% 100%, 0 77%);
+  clip-path: polygon(0 0, 100% 24%, 100% 100%, 0 77%);
+  background: url("http://via.placeholder.com/1280x750/333333/272727") no-repeat center;
+  background-size: cover;
+  height: 750px;
+  position: relative;
+  top: -180px;
+}
+
+#welcome {
+  padding-bottom: 55px;
+}
+
+.welcome {
+  text-align: justify;
+  text-justify: inter-word;
+  color: #fff;
+  font-size: .90em;
+  font-family: 'Open Sans', sans-serif;
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: right;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  button {
+    margin: 25px 25px 25px;
+    padding: 8px 20px 8px;
+  }
+}
+
+footer {
+  color: #fff;
+  background-color: #272727;
+  .credit {
+    background-color: #111;
+    padding: 5px 25px 5px;
+    font-size: .75em;
+  }
+}
