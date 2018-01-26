@@ -9,6 +9,7 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   width: 100%;
   background-color: #111;
   font-family: arial;
@@ -24,7 +25,7 @@ body {
   clip-path: polygon(50% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
   background: url("http://via.placeholder.com/1280x750/") no-repeat center;
   background-size: cover;
-  height: 600px;
+  height: 100vh;
   text-align: center;
   padding: 175px 0 0;
   margin: 0;
@@ -51,11 +52,12 @@ body {
 }
 
 .cta {
-  -webkit-clip-path: polygon(40% 0, 50% 120%, 60% 0);
+  -webkit-clip-path: polygon(40% 0, 50% 100%, 60% 0);
   clip-path: polygon(40% 0, 50% 100%, 60% 0);
   height: 36px;
   background-color: #272727;
-  margin-top: 160px; // find way to sticky to bottom of cta
+  position: relative;
+  bottom: -38vh;
   transform: translateY(0px);
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
@@ -74,17 +76,17 @@ body {
 }
 
 .parallelogram {
-  -webkit-clip-path: polygon(0 0, 100% 24%, 100% 100%, 0 77%);
-  clip-path: polygon(0 0, 100% 24%, 100% 100%, 0 77%);
+  -webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 70%);
+  clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 70%);
   background: url("http://via.placeholder.com/1280x750/333333/272727") no-repeat center;
   background-size: cover;
-  height: 750px;
+  height: 100vh;
   position: relative;
-  top: -180px;
+  bottom: 30vh;
 }
 
 #welcome {
-  padding-bottom: 55px;
+  padding-bottom: 5px;
 }
 
 .welcome {
