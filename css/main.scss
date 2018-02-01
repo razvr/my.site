@@ -1,7 +1,8 @@
 ---
 ---
 @import "variables";
-// @import "~bootstrap/scss/bootstrap";
+// Bootstrap 4.0.0
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
@@ -27,12 +28,17 @@ body {
   background-size: cover;
   height: 100vh;
   text-align: center;
-  padding: 175px 0 0;
   margin: 0;
+  .head_title {
+    position: relative;
+    top: 48%;
+    transform: translateY(-52%);
+  }
+
   h1 {
     font-family: 'Comfortaa', cursive;
     font-weight: bold;
-    font-size: 7.8em;
+    font-size: 20vw;
     color: #333;
     text-align: center;
     margin: 0 auto;
@@ -41,23 +47,27 @@ body {
     display: inline-block;
     text-align: center;
     margin: auto;
-    padding: 0 20px 0;
+    padding: 0 2vw 0;
     text-transform: uppercase;
-    font-size: .76em;
+    font-size: 1.2vw;
     font-family: arial;
     color: #272727;
     position: relative;
-    top: -15px;
+    top: -45px;
   }
 }
 
 .cta {
   -webkit-clip-path: polygon(40% 0, 50% 100%, 60% 0);
   clip-path: polygon(40% 0, 50% 100%, 60% 0);
-  height: 36px;
+  height: 6vh;
+  width: 100%;
   background-color: #272727;
-  position: relative;
-  bottom: -38vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3vh;
+  z-index: 2;
   transform: translateY(0px);
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
@@ -67,6 +77,11 @@ body {
   &:hover {
     background-color: #999;
   }
+
+.arrowbox {
+  position: relative;
+  }
+
 }
 
 /* this sets the position of the arrow when it's up, so it will move up or down by 14px when you add or remove this class */
@@ -84,11 +99,11 @@ body {
   position: relative;
   bottom: 30vh;
 }
-
+/*
 #welcome {
   padding-bottom: 5px;
 }
-
+*/
 .welcome {
   text-align: justify;
   text-justify: inter-word;
