@@ -8,10 +8,13 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+
+
+
 # Localhost Jekyll Server Settings
-host: '0.0.0.0'
-port: '4000'
-root: /my.site
+#host: '0.0.0.0'
+#port: '4000'
+root: '/_site'
 
 # Basic Blog Details
 title: 'Razur site'
@@ -19,8 +22,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/_site" # the subpath of your site, e.g. /blog
+#url: "https://razvr.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: '/:year/:month/:title/'
 
 markdown: kramdown
