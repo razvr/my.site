@@ -1,8 +1,12 @@
 ---
 ---
-@import "variables";
+
+//@import "bootstrap/scss/bootstrap";
+//@import "//bootstrap/dist/css/bootstrap.min.css";
+//@import "variables";
 // Bootstrap 4.0.0
-//@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css');
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
@@ -24,7 +28,7 @@ body {
 .envelope {
   -webkit-clip-path: polygon(50% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
   clip-path: polygon(50% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
-  background: url("http://via.placeholder.com/1280x750/") no-repeat center;
+  background: url("https://placehold.co/1280x750/") no-repeat center;
   background-size: cover;
   height: 100vh;
   text-align: center;
